@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <form class="register-form">
+            
+        <button>create</button>
+        <button>create</button>
+        <p class="message">Bienvenido</p>
+        </form>
+        <form class="redirect-form">
+        <!--<button>ingresar como cliente</button>-->
+        <!--<button>ingresar como empleado</button>-->
+        <!--<input class="boton" type="submit" value="INGRESAR COMO EMPLEADO" name="jugar" onclick="location.href="{{url_for('ingresoEmpleado')}}">-->
+        <a href="{{url_for('ingresoCliente')}}"> ingresoCliente
+            <button>Ingresar como cliente</button>
+        </a>
+        <a href="{{url_for('ingresoEmpleado')}}"> ingresoEmpleado
+            <button>Ingresar como empleado</button>
+        </a>
+        <p class="message">Bienvenido </p>
+        </form>
+{% endblock %}
