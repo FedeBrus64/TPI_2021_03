@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><h4>Librería F&F</h4></title>
+    </head>
+
+    <body>
+
+        <div align="center">
+            <img src="static/img/f&f.png">
+        </div>
+
+        <div class="form">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style7.css') }}">
+            <script type="text/javasript" crc="{{ url_for('static', filename='js/jquery.js') }}">
+
+            </script>
+            <form class="register-form">
+            <input type="text" placeholder="name"/> <!--text creo que es el nombre de la variable en html-->
+            <input type="password" placeholder="password"/><!--password creo que es el nombre de la variable en html-->
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+            <input type="text" placeholder="usuario"/>
+            <input type="password" placeholder="contraseña"/>
+            <button>ingresar</button>
+            <p class="message">Eres nuevo? <a href="{{url_for('registroEmpleado')}}">Registrate aquí</a></p>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

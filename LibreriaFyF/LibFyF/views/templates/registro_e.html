@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Librería F&F</title>
+    </head>
+
+    <body>
+
+        <div align="center">
+            <img src="static/img/f&f.png">
+        </div>
+
+        <div class="form">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style7.css') }}">
+            <script type="text/javasript" crc="{{ url_for('static', filename='js/jquery.js') }}">
+
+            </script>
+
+
+            
+            <form action="/registro_empleado" method= 'POST'>
+
+                <input type="text" name="nombre_emp" placeholder="nombre" required>
+                <input type="text" name="apellido_emp" placeholder="apellido" required>
+                <input type="text" name="email_emp" placeholder="email" required>
+                <input type="text" name="usuario_emp" placeholder="usuario" required>
+                <input type="password" name="contraseña_emp" placeholder="contraseña" required>
+                <button type="submit" onclick = <a href="{{url_for('homeEmpleado')}}"></a>> 
+                    registrar 
+                </button>
+                
+            </form>
+            
+        </div>
+        </div>
+    </body>
+</html>
